@@ -1,6 +1,6 @@
 {
   "items": [
-    { "type": "link", "label": "Home", "href": "/" },.
+    { "type": "link", "label": "Home", "href": "/" },
     { "type": "link", "label": "Guides", "href": "/guides/home" },
 
     {
