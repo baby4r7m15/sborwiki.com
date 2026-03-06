@@ -1,0 +1,44 @@
+{
+  "guides": [
+    {
+      "slug": "new-player",
+      "title": "Beginner Guide",
+      "description": "A beginner-friendly walkthrough for players starting SBO:R for the first time.",
+      "image": "/images/floors/floor1map.png",
+      "imageAlt": "Town of Beginnings map",
+      "tags": ["Beginner", "Progression", "Start Here"]
+    },
+    {
+      "slug": "leveling",
+      "title": "Leveling Guide",
+      "description": "A guide focused on efficient early and mid-game leveling routes and safer progression.",
+      "image": "/Sborlogotext.png",
+      "imageAlt": "SBO:R leveling guide banner",
+      "tags": ["Leveling", "Grinding", "Progression"]
+    },
+    {
+      "slug": "stats",
+      "title": "Stats Guide",
+      "description": "Learn how different stats affect survivability, damage, and build choices.",
+      "image": "/Sborlogotext.png",
+      "imageAlt": "SBO:R stats guide banner",
+      "tags": ["Stats", "Builds", "Guide"]
+    },
+    {
+      "slug": "weapon-basics",
+      "title": "Weapon Basics Guide",
+      "description": "A beginner-facing breakdown of choosing a weapon type and learning your playstyle.",
+      "image": "/Sborlogotext.png",
+      "imageAlt": "SBO:R weapon guide banner",
+      "tags": ["Weapons", "Beginner", "Builds"]
+    },
+    {
+      "slug": "floor-progression",
+      "title": "Floor Progression Guide",
+      "description": "A simple progression route to help new players know when to move on and when to slow down.",
+      "image": "/images/floors/floor1map.png",
+      "imageAlt": "SBO:R floor progression banner",
+      "tags": ["Floors", "Progression", "Route"]
+    }
+  ]
+}

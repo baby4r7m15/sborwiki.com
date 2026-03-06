@@ -1,0 +1,48 @@
+{
+  "slug": "stats",
+  "title": "Stats Guide",
+  "subtitle": "BUILD BASICS",
+  "kicker": "SWORD BLOX ONLINE: REBIRTH",
+  "bannerImage": "/Sborlogotext.png",
+  "bannerAlt": "SBO:R stats guide banner",
+  "updated": "March 2026",
+  "tags": ["Stats", "Builds", "Planning"],
+  "intro": [
+    "This guide explains stats in a way that helps new players actually make choices.",
+    "Instead of dumping formulas everywhere, it focuses on what each stat means for gameplay."
+  ],
+  "quickLinks": [
+    { "label": "Guide Directory", "href": "/guides/home.html" },
+    { "label": "Weapons Info", "href": "/information/weapons" },
+    { "label": "Protective Gear", "href": "/information/protective-gear" }
+  ],
+  "sections": [
+    {
+      "id": "stat-basics",
+      "type": "text",
+      "title": "Stat Philosophy",
+      "paragraphs": [
+        "The best stat spread is not always the highest damage spread.",
+        "A stronger beginner build is usually one that feels stable and forgiving."
+      ]
+    },
+    {
+      "id": "starter-priorities",
+      "type": "list",
+      "title": "What New Players Usually Need",
+      "items": [
+        "Enough survivability to recover from mistakes",
+        "Enough damage to keep farming from feeling slow",
+        "A stat setup that matches the weapon they actually use",
+        "A build they understand instead of one they copied blindly"
+      ]
+    },
+    {
+      "id": "tip-stats",
+      "type": "callout",
+      "title": "BUILD TIP",
+      "variant": "tip",
+      "text": "Balanced stats are often better for learning the game than forcing a glass-cannon setup too early."
+    }
+  ]
+}

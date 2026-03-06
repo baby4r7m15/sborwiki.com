@@ -1,0 +1,61 @@
+{
+  "slug": "leveling",
+  "title": "Leveling Guide",
+  "subtitle": "SAFE PROGRESSION",
+  "kicker": "SWORD BLOX ONLINE: REBIRTH",
+  "bannerImage": "/Sborlogotext.png",
+  "bannerAlt": "SBO:R leveling guide banner",
+  "updated": "March 2026",
+  "tags": ["Leveling", "Grinding", "Progression"],
+  "intro": [
+    "This guide focuses on leveling without making progression feel messy or overwhelming.",
+    "Use it to figure out when to farm, when to upgrade, and when to move forward."
+  ],
+  "quickLinks": [
+    { "label": "Guide Directory", "href": "/guides/home.html" },
+    { "label": "Floors 1-10 Info", "href": "/information/floors-1-10" },
+    { "label": "Weapons Info", "href": "/information/weapons" }
+  ],
+  "sections": [
+    {
+      "id": "leveling-overview",
+      "type": "text",
+      "title": "How To Think About Leveling",
+      "paragraphs": [
+        "Fast leveling is not just about fighting stronger enemies.",
+        "You level better when your damage, healing, survivability, and route knowledge are all stable."
+      ]
+    },
+    {
+      "id": "safe-loop",
+      "type": "steps",
+      "title": "Safe Leveling Loop",
+      "items": [
+        "Farm where kills feel consistent.",
+        "Restock before you are desperate.",
+        "Upgrade once progress starts feeling slow.",
+        "Move up only when your runs feel controlled.",
+        "Repeat instead of forcing difficult fights."
+      ]
+    },
+    {
+      "id": "warning-leveling",
+      "type": "callout",
+      "title": "SYSTEM WARNING",
+      "variant": "warning",
+      "text": "Grinding in a zone that is too dangerous often wastes more time than it saves."
+    },
+    {
+      "id": "leveling-table",
+      "type": "table",
+      "title": "Leveling Priorities",
+      "columns": ["Priority", "Reason", "Good Habit"],
+      "rows": [
+        ["Damage consistency", "Speeds up fights", "Use a weapon you can land hits with"],
+        ["Survival", "Prevents failed runs", "Respect healing and defense"],
+        ["Route familiarity", "Cuts downtime", "Learn safe loops"],
+        ["Upgrade timing", "Prevents stalls", "Upgrade before hard walls"]
+      ]
+    }
+  ]
+}

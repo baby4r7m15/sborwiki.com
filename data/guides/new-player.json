@@ -1,0 +1,104 @@
+{
+  "slug": "new-player",
+  "title": "Beginner Guide",
+  "subtitle": "START HERE",
+  "kicker": "SWORD BLOX ONLINE: REBIRTH",
+  "bannerImage": "/images/floors/floor1map.png",
+  "bannerAlt": "Floor 1 Town of Beginnings map",
+  "updated": "March 2026",
+  "tags": ["Beginner", "Start Here", "Progression"],
+  "intro": [
+    "Welcome to the beginner guide for Sword Blox Online: Rebirth.",
+    "This page is designed to help new players understand where to start, what matters early, and what mistakes to avoid."
+  ],
+  "quickLinks": [
+    { "label": "Guide Directory", "href": "/guides/home.html" },
+    { "label": "Weapons Info", "href": "/information/weapons" },
+    { "label": "Floors 1-10 Info", "href": "/information/floors-1-10" },
+    { "label": "Protective Gear", "href": "/information/protective-gear" }
+  ],
+  "sections": [
+    {
+      "id": "notice",
+      "type": "callout",
+      "title": "SYSTEM NOTICE",
+      "variant": "notice",
+      "text": "Do not try to learn everything at once. Focus on surviving and understanding your build first."
+    },
+    {
+      "id": "what-this-guide-covers",
+      "type": "text",
+      "title": "What This Guide Covers",
+      "paragraphs": [
+        "This guide explains the early-game priorities for brand new players.",
+        "You do not need perfect gear or full game knowledge to get started."
+      ]
+    },
+    {
+      "id": "first-goals",
+      "type": "steps",
+      "title": "Your First Goals",
+      "items": [
+        "Learn the town layout.",
+        "Choose a weapon type you enjoy.",
+        "Get basic armor or protection if available.",
+        "Fight enemies you can safely handle.",
+        "Return to town often instead of overextending."
+      ]
+    },
+    {
+      "id": "important-tip",
+      "type": "callout",
+      "title": "BEGINNER TIP",
+      "variant": "tip",
+      "text": "A comfortable build you understand is usually better than copying a stronger build you cannot play well."
+    },
+    {
+      "id": "town-layout",
+      "type": "image",
+      "title": "Town of Beginnings",
+      "src": "/images/floors/floor1map.png",
+      "alt": "Floor 1 map showing Town of Beginnings",
+      "caption": "This is the safest area for learning shops, routes, and important services."
+    },
+    {
+      "id": "early-priorities",
+      "type": "table",
+      "title": "Early Game Priorities",
+      "columns": ["Priority", "Why", "Recommendation"],
+      "rows": [
+        ["Weapon choice", "Determines how combat feels", "Choose comfort first"],
+        ["Survivability", "Helps reduce failed runs", "Important"],
+        ["Potion stock", "Lets you recover during mistakes", "Keep some"],
+        ["Exploration", "Helps you learn useful locations", "Do early"],
+        ["Rushing progression", "Can get you killed or stuck", "Avoid"]
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "type": "list",
+      "title": "Common Beginner Mistakes",
+      "items": [
+        "Spending everything too early",
+        "Ignoring defense or survivability",
+        "Using a weapon type you dislike just because it sounds strong",
+        "Pushing too far without supplies",
+        "Skipping basic town familiarization"
+      ]
+    },
+    {
+      "id": "warning",
+      "type": "callout",
+      "title": "SYSTEM WARNING",
+      "variant": "warning",
+      "text": "Rushing progression before you understand healing, gear, and safe farming routes can slow you down more than it helps."
+    },
+    {
+      "id": "danger-zone",
+      "type": "callout",
+      "title": "DANGER",
+      "variant": "danger",
+      "text": "Do not throw all your resources into a build just because somebody told you it is meta. Meta only matters if you can actually use it well."
+    }
+  ]
+}

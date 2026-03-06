@@ -1,0 +1,48 @@
+{
+  "slug": "weapon-basics",
+  "title": "Weapon Basics Guide",
+  "subtitle": "CHOOSE YOUR STYLE",
+  "kicker": "SWORD BLOX ONLINE: REBIRTH",
+  "bannerImage": "/Sborlogotext.png",
+  "bannerAlt": "SBO:R weapon basics banner",
+  "updated": "March 2026",
+  "tags": ["Weapons", "Beginner", "Builds"],
+  "intro": [
+    "This guide helps new players choose a weapon type without getting buried under raw data.",
+    "Start with comfort, rhythm, and consistency before chasing meta picks."
+  ],
+  "quickLinks": [
+    { "label": "Guide Directory", "href": "/guides/home.html" },
+    { "label": "Weapons Info", "href": "/information/weapons" },
+    { "label": "Stats Guide", "href": "/guides/index.html?guide=stats" }
+  ],
+  "sections": [
+    {
+      "id": "picking-a-weapon",
+      "type": "text",
+      "title": "How To Pick A Weapon",
+      "paragraphs": [
+        "Pick the weapon type that makes you feel the most confident in normal fights.",
+        "A style that feels smooth will usually help you learn the game faster than a stronger style you do not enjoy."
+      ]
+    },
+    {
+      "id": "weapon-checklist",
+      "type": "steps",
+      "title": "Weapon Choice Checklist",
+      "items": [
+        "Test attack rhythm and comfort.",
+        "Notice whether you can dodge and reposition cleanly.",
+        "Make sure the weapon fits your stat plan.",
+        "Choose consistency over hype."
+      ]
+    },
+    {
+      "id": "danger-weapon",
+      "type": "callout",
+      "title": "DANGER",
+      "variant": "danger",
+      "text": "Do not lock yourself into a playstyle just because other players told you it is the best."
+    }
+  ]
+}
