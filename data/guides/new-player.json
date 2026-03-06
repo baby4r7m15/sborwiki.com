@@ -3,8 +3,8 @@
   "title": "Beginner Guide",
   "subtitle": "START HERE",
   "kicker": "SWORD BLOX ONLINE: REBIRTH",
-  "bannerImage": "/images/floors/floor1map.png",
-  "bannerAlt": "Floor 1 Town of Beginnings map",
+  "bannerImage": "/images/maps/floor2map.png",
+  "bannerAlt": "Floor 2 Swordsman Fields Map",
   "updated": "March 2026",
   "tags": ["Beginner", "Start Here", "Progression"],
   "intro": [
@@ -49,10 +49,10 @@
     {
       "id": "town-layout",
       "type": "image",
-      "title": "Town of Beginnings",
-      "src": "/images/floors/floor1map.png",
-      "alt": "Floor 1 map showing Town of Beginnings",
-      "caption": "This is the safest area for learning shops, routes, and important services."
+      "title": "Swordsman Fields",
+      "src": "/images/maps/floor2map.png",
+      "alt": "Floor 2 Map",
+      "caption": "This is the first combat floor you will come across. Focus more on the Level 1 Boars by spawn. It is slow, but you will get exp and eventually move on."
     },
     {
       "id": "early-priorities",
