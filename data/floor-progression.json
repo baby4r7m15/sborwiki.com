@@ -1,0 +1,48 @@
+{
+  "slug": "floor-progression",
+  "title": "Floor Progression Guide",
+  "subtitle": "MOVE FORWARD SMART",
+  "kicker": "SWORD BLOX ONLINE: REBIRTH",
+  "bannerImage": "/images/floors/floor1map.png",
+  "bannerAlt": "SBO:R floor progression banner",
+  "updated": "March 2026",
+  "tags": ["Floors", "Progression", "Route"],
+  "intro": [
+    "This guide is meant to help players know when to stay, when to farm, and when to push ahead.",
+    "Think of it as a pacing guide instead of a giant floor encyclopedia."
+  ],
+  "quickLinks": [
+    { "label": "Guide Directory", "href": "/guides/home.html" },
+    { "label": "Floors 1-10 Info", "href": "/information/floors-1-10" },
+    { "label": "Beginner Guide", "href": "/guides/index.html?guide=new-player" }
+  ],
+  "sections": [
+    {
+      "id": "when-to-move-up",
+      "type": "text",
+      "title": "When To Move To The Next Floor",
+      "paragraphs": [
+        "Move forward when your current floor feels controlled, not when it feels barely survivable.",
+        "If supplies, damage, and navigation still feel shaky, keep building stability first."
+      ]
+    },
+    {
+      "id": "progression-signs",
+      "type": "list",
+      "title": "Signs You Are Ready",
+      "items": [
+        "Your current route feels safe and repeatable",
+        "You are not constantly running out of healing",
+        "You understand your build well enough to recover from mistakes",
+        "Your damage feels consistent instead of desperate"
+      ]
+    },
+    {
+      "id": "floor-warning",
+      "type": "callout",
+      "title": "SYSTEM WARNING",
+      "variant": "warning",
+      "text": "Moving up too early can make the game feel harsher than it actually is."
+    }
+  ]
+}
