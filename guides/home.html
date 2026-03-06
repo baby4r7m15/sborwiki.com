@@ -25,90 +25,104 @@
   <meta name="twitter:image" content="/Sborlogotext.png" />
 
   <style>
-    .guides-page{
-      display:grid;
-      gap:18px;
-    }
+  .guides-page{
+    display:grid;
+    gap:18px;
+  }
 
-    .guides-search{
-      width:100%;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);
-      color:#fff;
-      outline:none;
-    }
+  .guides-search-wrap{
+    max-width:900px;
+    margin:0 auto;
+    width:100%;
+  }
 
-    .guides-search::placeholder{
-      color:rgba(255,255,255,.58);
-    }
+  .guides-search{
+    width:100%;
+    padding:12px 14px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    outline:none;
+  }
 
-    .guides-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-      gap:18px;
-    }
+  .guides-search::placeholder{
+    color:rgba(255,255,255,.58);
+  }
 
-    .guide-card{
-      display:grid;
-      gap:14px;
-      padding:14px;
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(255,255,255,.04);
-      box-shadow:0 12px 24px rgba(0,0,0,.18);
-      text-decoration:none;
-      color:inherit;
-      transition:transform .18s ease,border-color .18s ease,background .18s ease;
-    }
+  .guides-grid-wrap{
+    max-width:1100px;
+    margin:0 auto;
+    width:100%;
+  }
 
-    .guide-card:hover{
-      transform:translateY(-3px);
-      border-color:rgba(255,255,255,.18);
-      background:rgba(255,255,255,.06);
-    }
+  .guides-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 320px));
+    justify-content:center;
+    gap:18px;
+  }
 
-    .guide-card-image{
-      width:100%;
-      aspect-ratio:16/9;
-      object-fit:cover;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      display:block;
-    }
+  .guide-card{
+    display:grid;
+    gap:14px;
+    padding:14px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.04);
+    box-shadow:0 12px 24px rgba(0,0,0,.18);
+    text-decoration:none;
+    color:inherit;
+    transition:transform .18s ease, border-color .18s ease, background .18s ease;
+  }
 
-    .guide-card-title{
-      font-size:1.08rem;
-      font-weight:700;
-      letter-spacing:.03em;
-    }
+  .guide-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(255,255,255,.18);
+    background:rgba(255,255,255,.06);
+  }
 
-    .guide-card-desc{
-      opacity:.85;
-      line-height:1.5;
-    }
+  .guide-card-image{
+    width:100%;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.10);
+    display:block;
+  }
 
-    .guide-card-tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-    }
+  .guide-card-title{
+    font-size:1.08rem;
+    font-weight:700;
+    letter-spacing:.03em;
+  }
 
-    .guide-card-tag{
-      display:inline-flex;
-      align-items:center;
-      padding:7px 10px;
-      border-radius:999px;
-      font-size:.78rem;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(255,255,255,.04);
-    }
+  .guide-card-desc{
+    opacity:.85;
+    line-height:1.5;
+  }
 
-    .guides-empty{
-      opacity:.75;
-    }
-  </style>
+  .guide-card-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .guide-card-tag{
+    display:inline-flex;
+    align-items:center;
+    padding:7px 10px;
+    border-radius:999px;
+    font-size:.78rem;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.04);
+  }
+
+  .guides-empty{
+    opacity:.75;
+    text-align:center;
+  }
+</style>
 </head>
 <body>
   <header class="hud-top">
@@ -154,26 +168,35 @@
     </section>
 
     <section class="hud-panel">
-      <div class="panel-head">
-        <span>SEARCH GUIDES</span>
-        <span class="panel-chip">FIND</span>
-      </div>
+  <div class="panel-head">
+    <span>SEARCH GUIDES</span>
+    <span class="panel-chip">FIND</span>
+  </div>
 
-      <input id="guidesSearch" class="guides-search" type="search" placeholder="Search by title, description, or tag..." aria-label="Search guides" />
-    </section>
+  <div class="guides-search-wrap">
+    <input
+      id="guidesSearch"
+      class="guides-search"
+      type="search"
+      placeholder="Search by title, description, or tag..."
+      aria-label="Search guides"
+    />
+  </div>
+</section>
 
-    <section class="hud-panel">
-      <div class="panel-head">
-        <span>AVAILABLE GUIDES</span>
-        <span class="panel-chip">CARDS</span>
-      </div>
+<section class="hud-panel">
+  <div class="panel-head">
+    <span>AVAILABLE GUIDES</span>
+    <span class="panel-chip">CARDS</span>
+  </div>
 
-      <div id="guidesGrid" class="guides-grid">
-        <div class="guides-empty">Loading guides…</div>
-      </div>
-    </section>
-  </main>
-
+  <div class="guides-grid-wrap">
+    <div id="guidesGrid" class="guides-grid">
+      <div class="guides-empty">Loading guides…</div>
+    </div>
+  </div>
+</section>
+</main>
   <div id="sao-toast-stack"></div>
 
   <script src="/js/toasts.js?v=1"></script>
