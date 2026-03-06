@@ -4,8 +4,8 @@
       "slug": "new-player",
       "title": "Beginner Guide",
       "description": "A beginner-friendly walkthrough for players starting SBO:R for the first time.",
-      "image": "/images/floors/floor1map.png",
-      "imageAlt": "Town of Beginnings map",
+      "image": "/images/banners/newplayerguide.png",
+      "imageAlt": "New Player Banner",
       "tags": ["Beginner", "Progression", "Start Here"]
     }
   ]
