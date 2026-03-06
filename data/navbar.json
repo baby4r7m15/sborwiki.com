@@ -1,24 +1,6 @@
 {
   "items": [
     { "type": "link", "label": "Home", "href": "/" },
-    { "type": "link", "label": "Guides", "href": "/guides/home" },
-
-    {
-      "type": "dropdown",
-      "label": "Information",
-      "items": [
-        { "label": "Weapons", "href": "/information/weapons" },
-        { "label": "Protective Gear", "href": "/information/protective-gear" }
-      ]
-    },
-
-    {
-      "type": "dropdown",
-      "label": "Floors",
-      "items": [
-        { "label": "Floors 1–10", "href": "/information/floors-1-10" },
-        { "label": "Floors 11–20", "href": "/information/floors-11-20" }
-      ]
-    }
+    { "type": "link", "label": "Guides", "href": "/guides/home" }
   ]
 }
