@@ -11,12 +11,6 @@
     "Welcome to the beginner guide for Sword Blox Online: Rebirth.",
     "This page is designed to help new players understand where to start, what matters early, and what mistakes to avoid."
   ],
-  "quickLinks": [
-    { "label": "Guide Directory", "href": "/guides/home.html" },
-    { "label": "Weapons Info", "href": "/information/weapons" },
-    { "label": "Floors 1-10 Info", "href": "/information/floors-1-10" },
-    { "label": "Protective Gear", "href": "/information/protective-gear" }
-  ],
   "sections": [
     {
       "id": "notice",
@@ -39,11 +33,10 @@
       "type": "steps",
       "title": "Your First Goals",
       "items": [
-        "Learn the town layout.",
         "Choose a weapon type you enjoy.",
         "Get basic armor or protection if available.",
         "Fight enemies you can safely handle.",
-        "Return to town often instead of overextending."
+        "Use the COL you get from mobs and quests to buy health potions."
       ]
     },
     {
@@ -51,7 +44,7 @@
       "type": "callout",
       "title": "BEGINNER TIP",
       "variant": "tip",
-      "text": "A comfortable build you understand is usually better than copying a stronger build you cannot play well."
+      "text": "Do the quests on floor 2 to get some good exp and starter COL."
     },
     {
       "id": "town-layout",
@@ -98,7 +91,7 @@
       "type": "callout",
       "title": "DANGER",
       "variant": "danger",
-      "text": "Do not throw all your resources into a build just because somebody told you it is meta. Meta only matters if you can actually use it well."
+      "text": "Do not throw all your stat points into a build just because somebody told you it is good. The BEST thing to do is do 2 Defense and 1 Strength. Do not worry about AGI, Luck, or Vitality when first starting."
     }
   ]
 }
