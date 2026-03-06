@@ -59,9 +59,7 @@
       color:rgba(255,255,255,.58);
     }
 
-    .guide-nav-list,
-    .guide-toc-list,
-    .guide-link-list{
+    .guide-toc-list{
       list-style:none;
       margin:0;
       padding:0;
@@ -69,9 +67,7 @@
       gap:8px;
     }
 
-    .guide-nav-list a,
-    .guide-toc-list a,
-    .guide-link-list a{
+    .guide-toc-list a{
       display:block;
       padding:10px 12px;
       border-radius:12px;
@@ -82,15 +78,12 @@
       transition:background .18s ease,border-color .18s ease,transform .18s ease;
     }
 
-    .guide-nav-list a:hover,
-    .guide-toc-list a:hover,
-    .guide-link-list a:hover{
+    .guide-toc-list a:hover{
       background:rgba(255,255,255,.07);
       border-color:rgba(255,255,255,.16);
       transform:translateY(-1px);
     }
 
-    .guide-nav-list a.active,
     .guide-toc-list a.active{
       border-color:rgba(120,220,255,.35);
       background:rgba(120,220,255,.10);
@@ -184,8 +177,7 @@
       box-shadow:inset 0 0 0 1px rgba(255,110,140,.08), 0 10px 20px rgba(0,0,0,.18);
     }
 
-    .toc-empty,
-    .nav-empty{
+    .toc-empty{
       opacity:.72;
       font-size:.95rem;
     }
@@ -251,7 +243,13 @@
             <span>GUIDE SEARCH</span>
             <span class="panel-chip">FIND</span>
           </div>
-          <input id="guideSearch" class="guide-search" type="search" placeholder="Search guide sections..." aria-label="Search this guide" />
+          <input
+            id="guideSearch"
+            class="guide-search"
+            type="search"
+            placeholder="Search guide sections..."
+            aria-label="Search this guide"
+          />
         </section>
 
         <section class="hud-panel">
