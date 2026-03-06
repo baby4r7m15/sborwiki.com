@@ -1,173 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>SBO:R Wiki – Guides</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<title>SBO:R Wiki – Guides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/css/floor-hud.css?v=1">
-  <link rel="stylesheet" href="/css/toasts.css?v=1">
+<link rel="stylesheet" href="/css/floor-hud.css?v=1">
+<link rel="stylesheet" href="/css/toasts.css?v=1">
 
-  <link rel="icon" href="/logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/logo.png" />
+<link rel="icon" href="/logo.png" type="image/png" />
+<link rel="apple-touch-icon" href="/logo.png" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sword Blox Online: Rebirth Wiki" />
-  <meta property="og:title" content="Sword Blox Online: Rebirth Guides" />
-  <meta property="og:description" content="Searchable beginner-friendly guide hub for SBO:R." />
-  <meta property="og:url" content="https://sborwiki.com/guides/home.html" />
-  <meta property="og:image" content="/Sborlogotext.png" />
-  <meta property="og:image:alt" content="Sword Blox Online Rebirth Wiki guide hub" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sword Blox Online: Rebirth Wiki" />
+<meta property="og:title" content="Sword Blox Online: Rebirth Guides" />
+<meta property="og:description" content="Searchable beginner-friendly guide hub for SBO:R." />
+<meta property="og:url" content="https://sborwiki.com/guides/home.html" />
+<meta property="og:image" content="/Sborlogotext.png" />
+<meta property="og:image:alt" content="Sword Blox Online Rebirth Wiki guide hub" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sword Blox Online: Rebirth Guides" />
-  <meta name="twitter:description" content="Searchable beginner-friendly guide hub for SBO:R." />
-  <meta name="twitter:image" content="/Sborlogotext.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sword Blox Online: Rebirth Guides" />
+<meta name="twitter:description" content="Searchable beginner-friendly guide hub for SBO:R." />
+<meta name="twitter:image" content="/Sborlogotext.png" />
 
-  <style>
-  .guides-page{
-    display:grid;
-    gap:18px;
-  }
+<style>
 
-  .guides-search-wrap{
-    max-width:900px;
-    margin:0 auto;
-    width:100%;
-  }
+/* Override the default floor grid so guides page becomes single column */
+.floor-grid.guides-page{
+  grid-template-columns: 1fr;
+}
 
-  .guides-search{
-    width:100%;
-    padding:12px 14px;
-    border-radius:14px;
-    border:1px solid rgba(255,255,255,.12);
-    background:rgba(255,255,255,.05);
-    color:#fff;
-    outline:none;
-  }
+.guides-page{
+  display:grid;
+  gap:18px;
+}
 
-  .guides-search::placeholder{
-    color:rgba(255,255,255,.58);
-  }
+/* CENTER SEARCH BAR */
+.guides-search-wrap{
+  max-width:900px;
+  margin:0 auto;
+  width:100%;
+}
 
-  .guides-grid-wrap{
-    max-width:1100px;
-    margin:0 auto;
-    width:100%;
-  }
+.guides-search{
+  width:100%;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  outline:none;
+}
 
-  .guides-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(260px, 320px));
-    justify-content:center;
-    gap:18px;
-  }
+.guides-search::placeholder{
+  color:rgba(255,255,255,.58);
+}
 
-  .guide-card{
-    display:grid;
-    gap:14px;
-    padding:14px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,.10);
-    background:rgba(255,255,255,.04);
-    box-shadow:0 12px 24px rgba(0,0,0,.18);
-    text-decoration:none;
-    color:inherit;
-    transition:transform .18s ease, border-color .18s ease, background .18s ease;
-  }
+/* CENTER CARD GRID */
+.guides-grid-wrap{
+  max-width:1100px;
+  margin:0 auto;
+  width:100%;
+}
 
-  .guide-card:hover{
-    transform:translateY(-3px);
-    border-color:rgba(255,255,255,.18);
-    background:rgba(255,255,255,.06);
-  }
+.guides-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 320px));
+  justify-content:center;
+  gap:18px;
+}
 
-  .guide-card-image{
-    width:100%;
-    aspect-ratio:16 / 9;
-    object-fit:cover;
-    border-radius:14px;
-    border:1px solid rgba(255,255,255,.10);
-    display:block;
-  }
+/* GUIDE CARDS */
 
-  .guide-card-title{
-    font-size:1.08rem;
-    font-weight:700;
-    letter-spacing:.03em;
-  }
+.guide-card{
+  display:grid;
+  gap:14px;
+  padding:14px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04);
+  box-shadow:0 12px 24px rgba(0,0,0,.18);
+  text-decoration:none;
+  color:inherit;
+  transition:transform .18s ease, border-color .18s ease, background .18s ease;
+}
 
-  .guide-card-desc{
-    opacity:.85;
-    line-height:1.5;
-  }
+.guide-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06);
+}
 
-  .guide-card-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
+.guide-card-image{
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  display:block;
+}
 
-  .guide-card-tag{
-    display:inline-flex;
-    align-items:center;
-    padding:7px 10px;
-    border-radius:999px;
-    font-size:.78rem;
-    border:1px solid rgba(255,255,255,.10);
-    background:rgba(255,255,255,.04);
-  }
+.guide-card-title{
+  font-size:1.08rem;
+  font-weight:700;
+  letter-spacing:.03em;
+}
 
-  .guides-empty{
-    opacity:.75;
-    text-align:center;
-  }
+.guide-card-desc{
+  opacity:.85;
+  line-height:1.5;
+}
+
+.guide-card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.guide-card-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:.78rem;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04);
+}
+
+.guides-empty{
+  opacity:.75;
+  text-align:center;
+}
+
 </style>
 </head>
+
 <body>
-  <header class="hud-top">
-    <div class="hud-left">
-      <div class="hud-kicker">SWORD BLOX ONLINE: REBIRTH</div>
-      <div class="hud-title">GUIDES</div>
-      <div class="hud-subtitle">PLAYER HELP DIRECTORY</div>
+
+<header class="hud-top">
+  <div class="hud-left">
+    <div class="hud-kicker">SWORD BLOX ONLINE: REBIRTH</div>
+    <div class="hud-title">GUIDES</div>
+    <div class="hud-subtitle">PLAYER HELP DIRECTORY</div>
+  </div>
+
+  <nav id="site-nav" class="hud-nav" aria-label="Site navigation"></nav>
+
+  <div class="hud-right">
+    <div class="hud-chip">GUIDES</div>
+    <div class="hud-chip hud-chip-soft">SEARCHABLE</div>
+  </div>
+</header>
+
+<main class="floor-grid guides-page">
+
+<section class="hud-panel panel-map">
+  <div class="panel-head">
+    <span>GUIDE DIRECTORY</span>
+    <span class="panel-chip">HOME</span>
+  </div>
+
+  <div class="map-frame">
+    <div class="map-image-wrap">
+      <img class="map-img" src="/Sborlogotext.png" alt="SBO:R Guides" />
+      <div class="map-overlay">
+        <div class="scanline"></div>
+      </div>
     </div>
+  </div>
 
-    <nav id="site-nav" class="hud-nav" aria-label="Site navigation"></nav>
-
-    <div class="hud-right">
-      <div class="hud-chip">GUIDES</div>
-      <div class="hud-chip hud-chip-soft">SEARCHABLE</div>
+  <div class="hud-panel subpanel">
+    <div class="panel-head slim">
+      <span>SYSTEM RECORD: GUIDE INDEX</span>
     </div>
-  </header>
+    <div class="hud-lore">
+      <p><strong>Browse player guides instead of pure info dumps.</strong></p>
+      <p>Use this page to help new players find the right guide fast.</p>
+    </div>
+  </div>
+</section>
 
-  <main class="floor-grid guides-page">
-    <section class="hud-panel panel-map">
-      <div class="panel-head">
-        <span>GUIDE DIRECTORY</span>
-        <span class="panel-chip">HOME</span>
-      </div>
-
-      <div class="map-frame">
-        <div class="map-image-wrap">
-          <img class="map-img" src="/Sborlogotext.png" alt="SBO:R Guides" />
-          <div class="map-overlay">
-            <div class="scanline"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hud-panel subpanel">
-        <div class="panel-head slim">
-          <span>SYSTEM RECORD: GUIDE INDEX</span>
-        </div>
-        <div class="hud-lore">
-          <p><strong>Browse player guides instead of pure info dumps.</strong></p>
-          <p>Use this page to help new players find the right guide fast.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="hud-panel">
+<section class="hud-panel">
   <div class="panel-head">
     <span>SEARCH GUIDES</span>
     <span class="panel-chip">FIND</span>
@@ -196,11 +210,14 @@
     </div>
   </div>
 </section>
-</main>
-  <div id="sao-toast-stack"></div>
 
-  <script src="/js/toasts.js?v=1"></script>
-  <script src="/js/navbar.js?v=1"></script>
-  <script src="/js/guides-home.js?v=1"></script>
+</main>
+
+<div id="sao-toast-stack"></div>
+
+<script src="/js/toasts.js?v=1"></script>
+<script src="/js/navbar.js?v=1"></script>
+<script src="/js/guides-home.js?v=1"></script>
+
 </body>
 </html>
