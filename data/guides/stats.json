@@ -3,7 +3,7 @@
   "title": "Stats Guide",
   "subtitle": "BUILD BASICS",
   "kicker": "SWORD BLOX ONLINE: REBIRTH",
-  "bannerImage": "/Sborlogotext.png",
+  "bannerImage": "/images/banners/statsguide.png",
   "bannerAlt": "SBO:R stats guide banner",
   "updated": "March 2026",
   "tags": ["Stats", "Builds", "Planning"],
@@ -11,19 +11,20 @@
     "This guide explains stats in a way that helps new players actually make choices.",
     "Instead of dumping formulas everywhere, it focuses on what each stat means for gameplay."
   ],
-  "quickLinks": [
-    { "label": "Guide Directory", "href": "/guides/home.html" },
-    { "label": "Weapons Info", "href": "/information/weapons" },
-    { "label": "Protective Gear", "href": "/information/protective-gear" }
-  ],
   "sections": [
     {
       "id": "stat-basics",
       "type": "text",
       "title": "Stat Philosophy",
       "paragraphs": [
-        "The best stat spread is not always the highest damage spread.",
-        "A stronger beginner build is usually one that feels stable and forgiving."
+        "It's not a good idea to spread your points out.",
+        "In most games you can spread them out to do better, but in this game it best to stick with 3.",
+        "You get 3 stats per level to work with so using them wisely is important because there are no free ways to reset as of 3/6/2026.",
+        "Defense decreases the amount of damage you take from mobs and players.",
+        "Strength increases the damage you deal to players and mobs as well as increases your chance to multi hit mobs.",
+        "Agility increases your stamina, walk and run speed, attack speed, and jump speed.",
+        "Vitality increases the max amount of HP you can have.",
+        "Luck increases the drop rate of items from mobs and bosses. This is only good at max level (500). Luck on;y comes into play if you did not recieve the drop on the first try."
       ]
     },
     {
@@ -31,8 +32,8 @@
       "type": "list",
       "title": "What New Players Usually Need",
       "items": [
-        "Enough survivability to recover from mistakes",
-        "Enough damage to keep farming from feeling slow",
+        "Defense so they don't take too much damage",
+        "Strength so the attack speed is better and more damage is dealt",
         "A stat setup that matches the weapon they actually use",
         "A build they understand instead of one they copied blindly"
       ]
@@ -42,7 +43,7 @@
       "type": "callout",
       "title": "BUILD TIP",
       "variant": "tip",
-      "text": "Balanced stats are often better for learning the game than forcing a glass-cannon setup too early."
+      "text": "It is recommended by a lot of players to do the 2 def 1 str strategy because those are the most important stats."
     }
   ]
 }
