@@ -17,15 +17,21 @@
       "type": "callout",
       "title": "SYSTEM NOTICE",
       "variant": "notice",
-      "text": "Do not try to learn everything at once. Focus on surviving and understanding your build first."
+      "text": "Do not try to learn everything at once. Focus on surviving and understanding that basics first."
     },
     {
-      "id": "what-this-guide-covers",
+      "id": "helpful-information",
       "type": "text",
-      "title": "What This Guide Covers",
+      "title": "Helpful Information",
       "paragraphs": [
-        "This guide explains the early-game priorities for brand new players.",
-        "You do not need perfect gear or full game knowledge to get started."
+        "You do not need perfect gear or full game knowledge to get started. Simply join in and play!",
+        "Right out of the tutorial in game you will be teleported to the first floor 'The Town of Beginnings' Here you can find a starter shop with you basic Gear and Weapons. As well as potion shop.",
+        "It is a good idea to go to floor 2 and start the quest by the spawn. It will give you some good exp and some COL (Money) That you can use later on.",
+        "Every time you level up, you gain 3 stat points. The best method of using them is to do 2 defense and 1 strength. Keep doing that. It will help you out so much.",
+        "When you kill a mob or boss in the game you will see a pop up saying what you earned. Exp, Items, Col. You will get SK as well as Exp. This is for your sword skills and level.",
+        "Your sk unlocks better skills and better swords you can use. Each floor has a max amount of sk you can get so be mindful of that.",
+        "At first you will only be able to buy health potion 1. These will help you if you get too low on HP. The crystals are the best, but they are spendy.",
+        "The game at first is slow, just keep at it. It is recommended you join a guild. Most high level players will help you farm levels and bosses."
       ]
     },
     {
@@ -47,23 +53,23 @@
       "text": "Do the quests on floor 2 to get some good exp and starter COL."
     },
     {
-      "id": "town-layout",
+      "id": "swordsman-fields",
       "type": "image",
       "title": "Swordsman Fields",
       "src": "/images/maps/floor2map.png",
       "alt": "Floor 2 Map",
       "caption": "This is the first combat floor you will come across. Focus more on the Level 1 Boars by spawn. It is slow, but you will get exp and eventually move on."
     },
-    {
+    {g
       "id": "early-priorities",
       "type": "table",
       "title": "Early Game Priorities",
       "columns": ["Priority", "Why", "Recommendation"],
       "rows": [
-        ["Weapon choice", "Determines how combat feels", "Choose comfort first"],
-        ["Survivability", "Helps reduce failed runs", "Important"],
-        ["Potion stock", "Lets you recover during mistakes", "Keep some"],
-        ["Exploration", "Helps you learn useful locations", "Do early"],
+        ["Weapon choice", "Determines how combat feels", "One Hand is best to start with"],
+        ["Stat Points", "Helps you with fighting better or not dying as much", "Important"],
+        ["Potion stock", "Lets you recover low HP", "Keep some"],
+        ["Exploration", "Helps you learn useful locations", "Just walk around the map"],
         ["Rushing progression", "Can get you killed or stuck", "Avoid"]
       ]
     },
@@ -72,11 +78,9 @@
       "type": "list",
       "title": "Common Beginner Mistakes",
       "items": [
-        "Spending everything too early",
-        "Ignoring defense or survivability",
-        "Using a weapon type you dislike just because it sounds strong",
-        "Pushing too far without supplies",
-        "Skipping basic town familiarization"
+        "Not visiting shops on the floors to get better gear.",
+        "Spreading out stat points. You only get so many.",
+        "Pushing too far with too low of a level. Take your time to do things right."
       ]
     },
     {
