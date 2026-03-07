@@ -7,6 +7,14 @@
       "image": "/images/banners/newplayerguide.png",
       "imageAlt": "New Player Banner",
       "tags": ["Beginner", "Progression", "Start Here"]
+    },
+    {
+      "slug": "stats",
+      "title": "Stat Points",
+      "description": "A walkthrough for the game's stat points.",
+      "image": "/images/banners/statsguide.png",
+      "imageAlt": "Stats Guide Banner",
+      "tags": ["Stats", "Progression", "Build"]
     }
   ]
 }
