@@ -15,6 +15,14 @@
       "image": "/images/banners/statsguide.png",
       "imageAlt": "Stats Guide Banner",
       "tags": ["Stats", "Progression", "Build"]
+    },
+    {
+      "slug": "leveling",
+      "title": "Leveling",
+      "description": "A simple guide for figuring out levels.",
+      "image": "/images/banners/levelingguide.png",
+      "imageAlt": "Leveling Guide Banner",
+      "tags": ["Levels", "Progression", "Build"]
     }
   ]
 }
