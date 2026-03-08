@@ -25,379 +25,359 @@
 <meta name="twitter:image" content="/Sborlogotext.png" />
 
 <style>
+  /* IMPORTANT: override floor-hud.css page grid */
+  .floor-grid{
+    display:block !important;
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
 
-.guide-layout{
-display:grid;
-grid-template-columns:320px minmax(0,1fr);
-gap:18px;
-align-items:start;
-width:100%;
-}
+  .guide-layout{
+    display:grid;
+    grid-template-columns:320px minmax(0,1fr);
+    gap:18px;
+    align-items:start;
+    width:100%;
+    min-width:0;
+  }
 
-.guide-sidebar{
-display:grid;
-gap:18px;
-position:sticky;
-top:16px;
-width:100%;
-}
+  .guide-sidebar{
+    display:grid;
+    gap:18px;
+    position:sticky;
+    top:16px;
+    width:100%;
+    min-width:0;
+  }
 
-.guide-content{
-display:grid;
-gap:18px;
-min-width:0;
-width:100%;
-align-content:start;
-}
+  .guide-content{
+    display:grid;
+    gap:18px;
+    width:100%;
+    min-width:0;
+    align-content:start;
+  }
 
-.guide-content > *{
-width:100%;
-min-width:0;
-}
+  .guide-content > *{
+    width:100%;
+    min-width:0;
+  }
 
-.panel-map{
-width:100%;
-min-width:0;
-}
+  .panel-map{
+    width:100%;
+    min-width:0;
+  }
 
-.map-frame,
-.map-image-wrap{
-width:100%;
-}
+  .map-frame,
+  .map-image-wrap{
+    width:100%;
+    min-width:0;
+  }
 
-.map-image-wrap{
-overflow:hidden;
-border-radius:16px;
-}
+  .map-image-wrap{
+    overflow:hidden;
+    border-radius:16px;
+  }
 
-.map-img{
-display:block;
-width:100%;
-height:auto;
-}
+  .map-img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
 
-.guide-search{
-width:100%;
-padding:12px 14px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,.12);
-background:rgba(255,255,255,.05);
-color:#fff;
-outline:none;
-}
+  .guide-search{
+    width:100%;
+    padding:12px 14px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    outline:none;
+    box-sizing:border-box;
+  }
 
-.guide-search::placeholder{
-color:rgba(255,255,255,.58);
-}
+  .guide-search::placeholder{
+    color:rgba(255,255,255,.58);
+  }
 
-.guide-toc-list{
-list-style:none;
-margin:0;
-padding:0;
-display:grid;
-gap:8px;
-}
+  .guide-toc-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    gap:8px;
+  }
 
-.guide-toc-list a{
-display:block;
-padding:10px 12px;
-border-radius:12px;
-text-decoration:none;
-color:inherit;
-border:1px solid rgba(255,255,255,.08);
-background:rgba(255,255,255,.03);
-transition:background .18s ease,border-color .18s ease,transform .18s ease;
-}
+  .guide-toc-list a{
+    display:block;
+    padding:10px 12px;
+    border-radius:12px;
+    text-decoration:none;
+    color:inherit;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.03);
+    transition:background .18s ease,border-color .18s ease,transform .18s ease;
+  }
 
-.guide-toc-list a:hover{
-background:rgba(255,255,255,.07);
-border-color:rgba(255,255,255,.16);
-transform:translateY(-1px);
-}
+  .guide-toc-list a:hover{
+    background:rgba(255,255,255,.07);
+    border-color:rgba(255,255,255,.16);
+    transform:translateY(-1px);
+  }
 
-.guide-toc-list a.active{
-border-color:rgba(120,220,255,.35);
-background:rgba(120,220,255,.10);
-box-shadow:0 0 0 1px rgba(120,220,255,.14) inset;
-}
+  .guide-toc-list a.active{
+    border-color:rgba(120,220,255,.35);
+    background:rgba(120,220,255,.10);
+    box-shadow:0 0 0 1px rgba(120,220,255,.14) inset;
+  }
 
-.guide-image{
-width:100%;
-display:block;
-border-radius:16px;
-border:1px solid rgba(255,255,255,.12);
-box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
+  .guide-image{
+    width:100%;
+    display:block;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+  }
 
-.guide-caption{
-margin-top:10px;
-font-size:.92rem;
-opacity:.82;
-}
+  .guide-caption{
+    margin-top:10px;
+    font-size:.92rem;
+    opacity:.82;
+  }
 
-.guide-table-wrap{
-overflow-x:auto;
-border-radius:14px;
-border:1px solid rgba(255,255,255,.12);
-background:rgba(255,255,255,.03);
-}
+  .guide-table-wrap{
+    overflow-x:auto;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.03);
+  }
 
-.guide-table{
-width:100%;
-border-collapse:collapse;
-min-width:640px;
-}
+  .guide-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:640px;
+  }
 
-.guide-table th,
-.guide-table td{
-padding:12px 14px;
-text-align:left;
-border-bottom:1px solid rgba(255,255,255,.08);
-vertical-align:top;
-}
+  .guide-table th,
+  .guide-table td{
+    padding:12px 14px;
+    text-align:left;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    vertical-align:top;
+  }
 
-.guide-table th{
-text-transform:uppercase;
-letter-spacing:.08em;
-font-size:.82rem;
-background:rgba(255,255,255,.05);
-opacity:.95;
-}
+  .guide-table th{
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:.82rem;
+    background:rgba(255,255,255,.05);
+    opacity:.95;
+  }
 
-.guide-steps,
-.guide-list{
-margin:0;
-padding-left:20px;
-display:grid;
-gap:10px;
-}
+  .guide-steps,
+  .guide-list{
+    margin:0;
+    padding-left:20px;
+    display:grid;
+    gap:10px;
+  }
 
-.guide-callout{
-padding:14px 16px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,.14);
-background:rgba(255,255,255,.04);
-box-shadow:0 10px 20px rgba(0,0,0,.18);
-}
+  .guide-callout{
+    padding:14px 16px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.14);
+    background:rgba(255,255,255,.04);
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+  }
 
-.guide-callout p:last-child{
-margin-bottom:0;
-}
+  .guide-callout p:last-child{
+    margin-bottom:0;
+  }
 
-.callout-notice{
-border-color:rgba(120,220,255,.25);
-background:linear-gradient(180deg, rgba(120,220,255,.10), rgba(255,255,255,.03));
-box-shadow:inset 0 0 0 1px rgba(120,220,255,.08), 0 10px 20px rgba(0,0,0,.18);
-}
+  .callout-notice{
+    border-color:rgba(120,220,255,.25);
+    background:linear-gradient(180deg, rgba(120,220,255,.10), rgba(255,255,255,.03));
+    box-shadow:inset 0 0 0 1px rgba(120,220,255,.08), 0 10px 20px rgba(0,0,0,.18);
+  }
 
-.callout-tip{
-border-color:rgba(120,255,180,.25);
-background:linear-gradient(180deg, rgba(120,255,180,.10), rgba(255,255,255,.03));
-box-shadow:inset 0 0 0 1px rgba(120,255,180,.08), 0 10px 20px rgba(0,0,0,.18);
-}
+  .callout-tip{
+    border-color:rgba(120,255,180,.25);
+    background:linear-gradient(180deg, rgba(120,255,180,.10), rgba(255,255,255,.03));
+    box-shadow:inset 0 0 0 1px rgba(120,255,180,.08), 0 10px 20px rgba(0,0,0,.18);
+  }
 
-.callout-warning{
-border-color:rgba(255,190,100,.25);
-background:linear-gradient(180deg, rgba(255,190,100,.10), rgba(255,255,255,.03));
-box-shadow:inset 0 0 0 1px rgba(255,190,100,.08), 0 10px 20px rgba(0,0,0,.18);
-}
+  .callout-warning{
+    border-color:rgba(255,190,100,.25);
+    background:linear-gradient(180deg, rgba(255,190,100,.10), rgba(255,255,255,.03));
+    box-shadow:inset 0 0 0 1px rgba(255,190,100,.08), 0 10px 20px rgba(0,0,0,.18);
+  }
 
-.callout-danger{
-border-color:rgba(255,110,140,.28);
-background:linear-gradient(180deg, rgba(255,110,140,.12), rgba(255,255,255,.03));
-box-shadow:inset 0 0 0 1px rgba(255,110,140,.08), 0 10px 20px rgba(0,0,0,.18);
-}
+  .callout-danger{
+    border-color:rgba(255,110,140,.28);
+    background:linear-gradient(180deg, rgba(255,110,140,.12), rgba(255,255,255,.03));
+    box-shadow:inset 0 0 0 1px rgba(255,110,140,.08), 0 10px 20px rgba(0,0,0,.18);
+  }
 
-.toc-empty{
-opacity:.72;
-font-size:.95rem;
-}
+  .toc-empty{
+    opacity:.72;
+    font-size:.95rem;
+  }
 
-.guide-section-anchor{
-scroll-margin-top:95px;
-}
+  .guide-section-anchor{
+    scroll-margin-top:95px;
+  }
 
-.guide-meta{
-display:grid;
-gap:10px;
-}
+  .guide-meta{
+    display:grid;
+    gap:10px;
+  }
 
-.guide-meta-row{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-}
+  .guide-meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
 
-.guide-badge{
-display:inline-flex;
-align-items:center;
-gap:8px;
-padding:8px 10px;
-border-radius:999px;
-font-size:.82rem;
-border:1px solid rgba(255,255,255,.10);
-background:rgba(255,255,255,.04);
-}
+  .guide-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 10px;
+    border-radius:999px;
+    font-size:.82rem;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.04);
+  }
 
-@media (max-width:980px){
+  #guideSections{
+    width:100%;
+    min-width:0;
+    display:grid;
+    gap:18px;
+  }
 
-.guide-layout{
-grid-template-columns:1fr;
-}
+  @media (max-width:980px){
+    .guide-layout{
+      grid-template-columns:1fr;
+    }
 
-.guide-sidebar{
-position:static;
-}
-
-}
-
+    .guide-sidebar{
+      position:static;
+    }
+  }
 </style>
 </head>
 
 <body>
-
 <header class="hud-top">
+  <div class="hud-left">
+    <div class="hud-kicker" id="guideKicker">SWORD BLOX ONLINE: REBIRTH</div>
+    <div class="hud-title" id="guideTitle">GUIDE</div>
+    <div class="hud-subtitle" id="guideSubtitle">LOADING…</div>
+  </div>
 
-<div class="hud-left">
-<div class="hud-kicker" id="guideKicker">SWORD BLOX ONLINE: REBIRTH</div>
-<div class="hud-title" id="guideTitle">GUIDE</div>
-<div class="hud-subtitle" id="guideSubtitle">LOADING…</div>
-</div>
+  <nav id="site-nav" class="hud-nav" aria-label="Site navigation"></nav>
 
-<nav id="site-nav" class="hud-nav"></nav>
-
-<div class="hud-right">
-<div class="hud-chip">GUIDE</div>
-<div class="hud-chip hud-chip-soft">JSON SYSTEM</div>
-</div>
-
+  <div class="hud-right">
+    <div class="hud-chip">GUIDE</div>
+    <div class="hud-chip hud-chip-soft">JSON SYSTEM</div>
+  </div>
 </header>
 
 <main class="floor-grid">
+  <div class="guide-layout">
+    <aside class="guide-sidebar">
+      <section class="hud-panel">
+        <div class="panel-head">
+          <span>GUIDE SEARCH</span>
+          <span class="panel-chip">FIND</span>
+        </div>
+        <input
+          id="guideSearch"
+          class="guide-search"
+          type="search"
+          placeholder="Search guide sections..."
+          aria-label="Search this guide"
+        />
+      </section>
 
-<div class="guide-layout">
+      <section class="hud-panel">
+        <div class="panel-head">
+          <span>TABLE OF CONTENTS</span>
+          <span class="panel-chip">TOC</span>
+        </div>
+        <ul id="guideToc" class="guide-toc-list">
+          <li class="toc-empty">Loading table of contents…</li>
+        </ul>
+      </section>
 
-<aside class="guide-sidebar">
+      <section class="hud-panel">
+        <div class="panel-head">
+          <span>ABOUT THIS GUIDE</span>
+          <span class="panel-chip">INFO</span>
+        </div>
+        <div class="hud-lore" id="guideIntro">
+          <p>Loading guide summary…</p>
+        </div>
+      </section>
 
-<section class="hud-panel">
-<div class="panel-head">
-<span>GUIDE SEARCH</span>
-<span class="panel-chip">FIND</span>
-</div>
+      <section class="hud-panel">
+        <div class="panel-head">
+          <span>SYSTEM NOTICE</span>
+          <span class="panel-chip">CONTACT</span>
+        </div>
+        <div class="hud-lore">
+          <p>If you have any suggestions or edits please DM <strong>@babyartie</strong> on Discord.</p>
+        </div>
+      </section>
+    </aside>
 
-<input
-id="guideSearch"
-class="guide-search"
-type="search"
-placeholder="Search guide sections..."
-/>
-</section>
+    <section class="guide-content">
+      <section class="hud-panel panel-map">
+        <div class="panel-head">
+          <span>SYSTEM DISPLAY</span>
+          <span class="panel-chip">GUIDE</span>
+        </div>
 
-<section class="hud-panel">
+        <div class="map-frame">
+          <div class="map-image-wrap">
+            <img
+              class="map-img"
+              id="guideBanner"
+              src="/Sborlogotext.png"
+              alt="Guide banner"
+            />
+            <div class="map-overlay">
+              <div class="scanline"></div>
+            </div>
+          </div>
+        </div>
 
-<div class="panel-head">
-<span>TABLE OF CONTENTS</span>
-<span class="panel-chip">TOC</span>
-</div>
+        <div class="hud-panel subpanel">
+          <div class="panel-head slim">
+            <span id="guideRecordTitle">SYSTEM RECORD: GUIDE</span>
+          </div>
+          <div class="hud-lore guide-meta" id="guideHeroText"></div>
+        </div>
+      </section>
 
-<ul id="guideToc" class="guide-toc-list">
-<li class="toc-empty">Loading table of contents…</li>
-</ul>
-
-</section>
-
-<section class="hud-panel">
-
-<div class="panel-head">
-<span>ABOUT THIS GUIDE</span>
-<span class="panel-chip">INFO</span>
-</div>
-
-<div class="hud-lore" id="guideIntro">
-<p>Loading guide summary…</p>
-</div>
-
-</section>
-
-<section class="hud-panel">
-
-<div class="panel-head">
-<span>SYSTEM NOTICE</span>
-<span class="panel-chip">CONTACT</span>
-</div>
-
-<div class="hud-lore">
-<p>If you have any suggestions or edits please DM <strong>@babyartie</strong> on Discord.</p>
-</div>
-
-</section>
-
-</aside>
-
-<section class="guide-content">
-
-<section class="hud-panel panel-map">
-
-<div class="panel-head">
-<span>SYSTEM DISPLAY</span>
-<span class="panel-chip">GUIDE</span>
-</div>
-
-<div class="map-frame">
-<div class="map-image-wrap">
-
-<img
-class="map-img"
-id="guideBanner"
-src="/Sborlogotext.png"
-alt="Guide banner"
-/>
-
-<div class="map-overlay">
-<div class="scanline"></div>
-</div>
-
-</div>
-</div>
-
-<div class="hud-panel subpanel">
-
-<div class="panel-head slim">
-<span id="guideRecordTitle">SYSTEM RECORD: GUIDE</span>
-</div>
-
-<div class="hud-lore guide-meta" id="guideHeroText"></div>
-
-</div>
-
-</section>
-
-<div id="guideSections"></div>
-
-</section>
-
-</div>
-
+      <div id="guideSections"></div>
+    </section>
+  </div>
 </main>
 
 <div id="sao-toast-stack">
-
-<div class="sao-toast sao-toast-yellow show">
-
-<div class="sao-toast-header">SYSTEM NOTICE</div>
-<div class="sao-toast-body">Guide HUD loaded successfully.</div>
-
-<button class="sao-toast-close">✕</button>
-
-<div class="sao-toast-progress"></div>
-
-</div>
-
+  <div class="sao-toast sao-toast-yellow show" role="status" aria-live="polite">
+    <div class="sao-toast-header">SYSTEM NOTICE</div>
+    <div class="sao-toast-body">Guide HUD loaded successfully.</div>
+    <button class="sao-toast-close" type="button">✕</button>
+    <div class="sao-toast-progress"></div>
+  </div>
 </div>
 
 <script src="/js/toasts.js?v=1"></script>
 <script src="/js/navbar.js?v=1"></script>
-<script src="/js/guide-page.js?v=2"></script>
-
+<script src="/js/guide-page.js?v=3"></script>
 </body>
 </html>
